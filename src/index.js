@@ -1,13 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import Router from './Router';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Router from "./Router";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+const queryClient = new QueryClient();
 root.render(
   <React.StrictMode>
-    <Router />
+    <QueryClientProvider client={queryClient}>
+      <Router />
+    </QueryClientProvider>
   </React.StrictMode>
 );
-
-
