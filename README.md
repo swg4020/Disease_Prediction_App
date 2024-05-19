@@ -7,8 +7,9 @@
 ## Project 계획서
 
 2024-05-16 ~ 2024-05-23
+
 16
-- 기획서 작성
+- 기획서 작성 
 - 계획서 작성
 - 기본 세팅
 - 필요 컴포넌트 구성
@@ -80,6 +81,7 @@
 ## Project URL
 
 ## Github URL
+https://github.com/swg4020
 
 ### Project 진행중 느낀점
 ---
@@ -88,6 +90,11 @@
 
 ### 라이브러리
 ---
+- Axios / npm install axios "^1.6.8"
+- Router / npm i react-router-dom "^6.23.1"
+- Query / npm i @tanstack/react-query "^5.37.1"
+- Styled / npm i styled-components "^6.1.11"
+- Reset / npm i styled-reset "^4.5.2"
 
 ### Project API
 ---
