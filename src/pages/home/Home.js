@@ -4,10 +4,26 @@ import { useQuery } from "@tanstack/react-query";
 import styled from "styled-components";
 import { listUp } from "../../components/listUp";
 import { listUpD } from "../../components/listUpD";
+import { InfoItem } from "./InfoItem";
 
-const Container = styled.div``;
+
+const Container = styled.div`
+  max-width: 450px;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #dbdbdb;
+  padding: 20px;
+`;
 const ConWrap = styled.div``;
-const Con = styled.div``;
+const Con = styled.div`
+  width: 100%;
+  height: 300px;
+  background-color: green;
+  color: white;
+`;
+
+const Item = styled.div``;
 
 export const Home = () => {
   const [diss, setDiss] = useState(1);
@@ -30,13 +46,13 @@ export const Home = () => {
   return (
     <Container>
       <ConWrap>
-        <Con>
-          <h2>예측 지역 : {titleInfo}</h2>
-          <h2>예측 질병 : {titleDInfo}</h2>
-          <h3>예측 일자 : {basedata[0].dt}</h3>
-          <p>질병 예측 진료건수  : {basedata[0].cnt}</p>
-          <p></p>
-        </Con>
+        <h2>질병 예측 정보</h2>
+        <InfoItem dissinfo={1} sidoinfo={11}/>
+        <InfoItem dissinfo={2} sidoinfo={11}/>
+        <InfoItem dissinfo={3} sidoinfo={11}/>
+        <InfoItem dissinfo={4} sidoinfo={11}/>
+        <InfoItem dissinfo={5} sidoinfo={11}/>
+        <InfoItem dissinfo={15} sidoinfo={11}/>
       </ConWrap>
     </Container>
   );

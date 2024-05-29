@@ -21,6 +21,6 @@ export const listUpD = [
   },
   {
     id: 15,
-    title: "심뇌혈관 질환",
+    title: "심뇌혈관질환",
   },
 ];
