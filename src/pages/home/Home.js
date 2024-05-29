@@ -6,7 +6,6 @@ import { listUp } from "../../components/listUp";
 import { listUpD } from "../../components/listUpD";
 import { InfoItem } from "./InfoItem";
 
-
 const Container = styled.div`
   max-width: 450px;
   width: 100%;
@@ -14,16 +13,14 @@ const Container = styled.div`
   height: 100%;
   background-color: #dbdbdb;
   padding: 20px;
+  margin: 0 auto;
 `;
 const ConWrap = styled.div``;
-const Con = styled.div`
-  width: 100%;
-  height: 300px;
-  background-color: green;
-  color: white;
-`;
 
-const Item = styled.div``;
+const Title = styled.h2`
+  font-size: 19px;
+  margin-bottom: 20px;
+`;
 
 export const Home = () => {
   const [diss, setDiss] = useState(1);
@@ -46,13 +43,13 @@ export const Home = () => {
   return (
     <Container>
       <ConWrap>
-        <h2>질병 예측 정보</h2>
-        <InfoItem dissinfo={1} sidoinfo={11}/>
-        <InfoItem dissinfo={2} sidoinfo={11}/>
-        <InfoItem dissinfo={3} sidoinfo={11}/>
-        <InfoItem dissinfo={4} sidoinfo={11}/>
-        <InfoItem dissinfo={5} sidoinfo={11}/>
-        <InfoItem dissinfo={15} sidoinfo={11}/>
+        <Title>질병 예측 정보</Title>
+        <InfoItem dissinfo={1} sidoinfo={11} />
+        <InfoItem dissinfo={2} sidoinfo={11} />
+        <InfoItem dissinfo={3} sidoinfo={11} />
+        <InfoItem dissinfo={4} sidoinfo={11} />
+        <InfoItem dissinfo={5} sidoinfo={11} />
+        <InfoItem dissinfo={15} sidoinfo={11} />
       </ConWrap>
     </Container>
   );
